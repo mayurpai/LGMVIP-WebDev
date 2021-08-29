@@ -175,7 +175,6 @@ html {
   background-image: url("../images/mountain.jpg");
   background-size: cover;
   position: relative;
-  scroll-snap-align: start;
 }
 
 .main-container .main-page .main-content {
@@ -254,20 +253,77 @@ html {
   position: relative;
   height: 100%;
   width: 100vw;
-  background-image: url("../images/mountain.jpg");
+  background-color: #fefefe;
   scroll-snap-align: start;
   background-size: cover;
 }
 
+.main-container .welcome .welcome-content {
+  position: absolute;
+  height: 50rem;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: grey;
+}
+
+.main-container .welcome .welcome-content p {
+  font-size: 4rem;
+  margin-bottom: 35rem;
+  color: #000;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container .welcome .welcome-content .content {
+  position: absolute;
+  width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 30rem;
+  top: 15rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-container .welcome .welcome-content .content h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000;
+}
+
+.main-container .welcome .welcome-content .content #umbrella {
+  position: relative;
+  font-size: 19rem;
+  color: #000;
+}
+
 @media screen and (max-width: 768px) {
-  nav .logo {
+  .main-container nav .logo {
     float: none;
     width: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  nav .links {
+  .main-container nav .links {
     float: none;
     position: fixed;
     z-index: 9;
@@ -291,24 +347,24 @@ html {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  nav .links a {
+  .main-container nav .links a {
     font-size: 2rem;
   }
-  nav :checked ~ .links {
+  .main-container nav :checked ~ .links {
     bottom: 0;
   }
-  nav .icon {
+  .main-container nav .icon {
     display: block;
   }
-  nav :checked ~ .icon .line:nth-child(1) {
+  .main-container nav :checked ~ .icon .line:nth-child(1) {
     -webkit-transform: translateY(1rem) rotate(225deg);
             transform: translateY(1rem) rotate(225deg);
   }
-  nav :checked ~ .icon .line:nth-child(3) {
+  .main-container nav :checked ~ .icon .line:nth-child(3) {
     -webkit-transform: translateY(-1rem) rotate(-225deg);
             transform: translateY(-1rem) rotate(-225deg);
   }
-  nav :checked ~ .icon .line:nth-child(2) {
+  .main-container nav :checked ~ .icon .line:nth-child(2) {
     opacity: 0;
   }
 }

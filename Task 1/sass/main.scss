@@ -165,7 +165,7 @@ html {
         background-image: url("../images/mountain.jpg");
         background-size: cover;
         position: relative;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         .main-content {
             position: absolute;
@@ -234,61 +234,105 @@ html {
         position: relative;
         height: 100%;
         width: 100vw;
-        background-image: url("../images/mountain.jpg");
+        background-color: $bgcolor1;
         scroll-snap-align: start;
         background-size: cover;
 
-    }
-}
+        .welcome-content {
+            position: absolute;
+            height: 50rem;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+            flex-wrap: wrap;
+            background-color: grey;
 
+            p {
+                font-size: 4rem;
+                margin-bottom: 35rem;
+                color: $black;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
 
-@media screen and (max-width: 768px) {
-    nav .logo {
-        float: none;
-        width: auto;
-        justify-content: center;
-    }
+            .content {
+                position: absolute;
+                width: 60%;
+                height: fit-content;
+                left: 30rem;
+                top: 15rem;
+                padding: 2rem;
+                display: flex;
+                justify-content: space-around;
 
-    nav .links {
-        float: none;
-        position: fixed;
-        z-index: 9;
-        left: 0;
-        right: 0;
-        top: 10rem;
-        bottom: 100%;
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: rgba(0, 0, 0, .8);
-        overflow: hidden;
-        box-sizing: border-box;
-        transition: all .5s ease-in-out;
-    }
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 100;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color: $black;
+                }
 
-    nav .links a {
-        font-size: 2rem;
-    }
+                #umbrella {
+                    position: relative;
+                    // right: 10rem;
+                    font-size: 19rem;
+                    color: #000;
+                }
+            }
 
-    nav :checked~.links {
-        bottom: 0;
-    }
-
-    nav .icon {
-        display: block;
-    }
-
-    nav :checked~.icon .line:nth-child(1) {
-        transform: translateY(1rem) rotate(225deg);
-    }
-
-    nav :checked~.icon .line:nth-child(3) {
-        transform: translateY(-1rem) rotate(-225deg);
+        }
     }
 
-    nav :checked~.icon .line:nth-child(2) {
-        opacity: 0;
-    }
 
+    @media screen and (max-width: 768px) {
+        nav .logo {
+            float: none;
+            width: auto;
+            justify-content: center;
+        }
+
+        nav .links {
+            float: none;
+            position: fixed;
+            z-index: 9;
+            left: 0;
+            right: 0;
+            top: 10rem;
+            bottom: 100%;
+            width: auto;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgba(0, 0, 0, .8);
+            overflow: hidden;
+            box-sizing: border-box;
+            transition: all .5s ease-in-out;
+        }
+
+        nav .links a {
+            font-size: 2rem;
+        }
+
+        nav :checked~.links {
+            bottom: 0;
+        }
+
+        nav .icon {
+            display: block;
+        }
+
+        nav :checked~.icon .line:nth-child(1) {
+            transform: translateY(1rem) rotate(225deg);
+        }
+
+        nav :checked~.icon .line:nth-child(3) {
+            transform: translateY(-1rem) rotate(-225deg);
+        }
+
+        nav :checked~.icon .line:nth-child(2) {
+            opacity: 0;
+        }
+    }
 }
