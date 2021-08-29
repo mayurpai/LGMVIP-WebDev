@@ -78,7 +78,7 @@ html {
       scroll-snap-type: proximity;
 }
 
-nav {
+.main-container nav {
   position: fixed;
   z-index: 10;
   left: 0;
@@ -88,10 +88,9 @@ nav {
   font-weight: bolder;
   padding: 0 5%;
   height: 10.0rem;
-  background-color: #5f4a7b;
 }
 
-nav .logo {
+.main-container nav .logo {
   float: left;
   width: 25%;
   height: 100%;
@@ -108,7 +107,7 @@ nav .logo {
   color: #fefefe;
 }
 
-nav .links {
+.main-container nav .links {
   float: right;
   padding: 0;
   margin: 0;
@@ -122,11 +121,11 @@ nav .links {
           align-items: center;
 }
 
-nav .links li {
+.main-container nav .links li {
   list-style: none;
 }
 
-nav .links a {
+.main-container nav .links a {
   display: block;
   padding: 1em;
   font-size: 1.6rem;
@@ -135,16 +134,16 @@ nav .links a {
   text-decoration: none;
 }
 
-nav .links a:hover {
+.main-container nav .links a:hover {
   color: #ffe26d;
 }
 
-#nav-toggle {
+.main-container #navToggle {
   position: absolute;
   top: -10rem;
 }
 
-nav .icon-burger {
+.main-container nav .icon {
   display: none;
   position: absolute;
   right: 5%;
@@ -153,7 +152,7 @@ nav .icon-burger {
           transform: translateY(-50%);
 }
 
-nav .icon-burger .line {
+.main-container nav .icon .line {
   width: 3rem;
   height: .5rem;
   background-color: #fefefe;
@@ -161,6 +160,73 @@ nav .icon-burger .line {
   border-radius: .3rem;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.main-container .main-page {
+  height: 100%;
+  width: 100vw;
+  background-image: url("../images/mountain.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.main-container .main-page .main-content {
+  position: absolute;
+  top: 20rem;
+  left: 32.5rem;
+  height: 30rem;
+  width: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main-container .main-page .main-content p {
+  font-size: 4.5rem;
+  color: #fefefe;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
+}
+
+.main-container .main-page .main-content h2 {
+  font-weight: 100;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fefefe;
+  padding: 1rem;
+}
+
+.main-container .main-page .main-content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .main-page .main-content .learnMore1,
+.main-container .main-page .main-content .learnMore2 {
+  height: 3.5rem;
+  width: 12rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.main-container .main-page .main-content .learnMore1 {
+  background-color: #ffe26d;
+}
+
+.main-container .main-page .main-content .learnMore2 {
+  background-color: #5f4a7b;
 }
 
 @media screen and (max-width: 768px) {
@@ -201,18 +267,18 @@ nav .icon-burger .line {
   nav :checked ~ .links {
     bottom: 0;
   }
-  nav .icon-burger {
+  nav .icon {
     display: block;
   }
-  nav :checked ~ .icon-burger .line:nth-child(1) {
+  nav :checked ~ .icon .line:nth-child(1) {
     -webkit-transform: translateY(1rem) rotate(225deg);
             transform: translateY(1rem) rotate(225deg);
   }
-  nav :checked ~ .icon-burger .line:nth-child(3) {
+  nav :checked ~ .icon .line:nth-child(3) {
     -webkit-transform: translateY(-1rem) rotate(-225deg);
             transform: translateY(-1rem) rotate(-225deg);
   }
-  nav :checked ~ .icon-burger .line:nth-child(2) {
+  nav :checked ~ .icon .line:nth-child(2) {
     opacity: 0;
   }
 }

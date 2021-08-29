@@ -78,80 +78,141 @@ html {
     width: 100vw;
     scroll-behavior: smooth;
     scroll-snap-type: proximity;
-}
 
-nav {
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    top: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    padding: 0 5%;
-    height: 10.0rem;
-    background-color: $learnmore2;
-}
+    nav {
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        padding: 0 5%;
+        height: 10.0rem;
+        // background-color: $learnmore2;
+    }
 
-nav .logo {
-    float: left;
-    width: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 2.4rem;
-    color: $bgcolor1;
-}
+    nav .logo {
+        float: left;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 2.4rem;
+        color: $bgcolor1;
+    }
 
-nav .links {
-    float: right;
-    padding: 0;
-    margin: 0;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-}
+    nav .links {
+        float: right;
+        padding: 0;
+        margin: 0;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+    }
 
-nav .links li {
-    list-style: none;
-}
+    nav .links li {
+        list-style: none;
+    }
 
-nav .links a {
-    display: block;
-    padding: 1em;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: $bgcolor1;
-    text-decoration: none;
-    &:hover{
-        color: $learnmore1;
+    nav .links a {
+        display: block;
+        padding: 1em;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $bgcolor1;
+        text-decoration: none;
+
+        &:hover {
+            color: $learnmore1;
+        }
+    }
+
+    #navToggle {
+        position: absolute;
+        top: -10rem;
+    }
+
+    nav .icon {
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    nav .icon .line {
+        width: 3rem;
+        height: .5rem;
+        background-color: $bgcolor1;
+        margin: .5rem;
+        border-radius: .3rem;
+        transition: all .3s ease-in-out;
+    }
+
+    .main-page {
+        height: 100%;
+        width: 100vw;
+        background-image: url("../images/mountain.jpg");
+        background-size: cover;
+        position: relative;
+
+        .main-content {
+            position: absolute;
+            top: 20rem;
+            left: 32.5rem;
+            height: 30rem;
+            width: 100rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            p {
+                font-size: 4.5rem;
+                color: $bgcolor1;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 1rem;
+            }
+
+            h2 {
+                font-weight: 100;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: $bgcolor1;
+                padding: 1rem;
+            }
+
+            .button {
+                display: flex;
+            }
+
+            .learnMore1,
+            .learnMore2 {
+                height: 3.5rem;
+                width: 12rem;
+                margin: 1rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border: 0;
+                border-radius: 0.5rem;
+
+            }
+
+            .learnMore1 {
+                background-color: $learnmore1;
+            }
+
+            .learnMore2 {
+                background-color: $learnmore2;
+            }
+        }
     }
 }
 
-#nav-toggle {
-    position: absolute;
-    top: -10rem;
-}
-
-nav .icon-burger {
-    display: none;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-nav .icon-burger .line {
-    width: 3rem;
-    height: .5rem;
-    background-color: $bgcolor1;
-    margin: .5rem;
-    border-radius: .3rem;
-    transition: all .3s ease-in-out;
-}
 
 @media screen and (max-width: 768px) {
     nav .logo {
@@ -186,19 +247,19 @@ nav .icon-burger .line {
         bottom: 0;
     }
 
-    nav .icon-burger {
+    nav .icon {
         display: block;
     }
 
-    nav :checked~.icon-burger .line:nth-child(1) {
+    nav :checked~.icon .line:nth-child(1) {
         transform: translateY(1rem) rotate(225deg);
     }
 
-    nav :checked~.icon-burger .line:nth-child(3) {
+    nav :checked~.icon .line:nth-child(3) {
         transform: translateY(-1rem) rotate(-225deg);
     }
 
-    nav :checked~.icon-burger .line:nth-child(2) {
+    nav :checked~.icon .line:nth-child(2) {
         opacity: 0;
     }
 
