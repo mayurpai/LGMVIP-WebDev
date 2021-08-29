@@ -175,6 +175,7 @@ html {
   background-image: url("../images/mountain.jpg");
   background-size: cover;
   position: relative;
+  scroll-snap-align: start;
 }
 
 .main-container .main-page .main-content {
@@ -251,7 +252,7 @@ html {
 
 .main-container .welcome {
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   background-color: #fefefe;
   scroll-snap-align: start;
@@ -260,7 +261,7 @@ html {
 
 .main-container .welcome .welcome-content {
   position: absolute;
-  height: 50rem;
+  height: 100%;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,12 +276,12 @@ html {
   place-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: grey;
+  background-color: #fefefe;
 }
 
 .main-container .welcome .welcome-content p {
-  font-size: 4rem;
-  margin-bottom: 35rem;
+  font-size: 3rem;
+  margin-bottom: 60rem;
   color: #000;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -293,7 +294,7 @@ html {
   height: -moz-fit-content;
   height: fit-content;
   left: 30rem;
-  top: 15rem;
+  top: 11rem;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,6 +314,86 @@ html {
   position: relative;
   font-size: 19rem;
   color: #000;
+}
+
+.main-container .welcome .welcome-content .cards {
+  position: absolute;
+  top: 47.5%;
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container .welcome .welcome-content .cards #circle {
+  margin-left: 4rem;
+  background: #5f4a7b;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .welcome .welcome-content .cards .outter1,
+.main-container .welcome .welcome-content .cards .outter2,
+.main-container .welcome .welcome-content .cards .outter3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 15rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.main-container .welcome .welcome-content .cards h3 {
+  padding: 2rem;
+  color: #5f4a7b;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-container .welcome .welcome-content .cards p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0rem;
+  color: #5f4a7b;
+  padding-bottom: 2rem;
+}
+
+.main-container .welcome .welcome-content .cards .learnMore2 {
+  height: 3.5rem;
+  width: 12rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #5f4a7b;
+  color: #fefefe;
+}
+
+.main-container .welcome .welcome-content .cards .learnMore2 a {
+  text-decoration: none;
+  color: #fefefe;
 }
 
 @media screen and (max-width: 768px) {
