@@ -165,7 +165,7 @@ html {
         background-image: url("../images/mountain.jpg");
         background-size: cover;
         position: relative;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         .main-content {
             position: absolute;
@@ -235,7 +235,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         .welcome-content {
             position: absolute;
@@ -356,7 +356,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
         display: flex;
         justify-content: center;
 
@@ -402,6 +402,7 @@ html {
             margin-left: 2rem;
             color: $learnmore2;
         }
+
         .learnMore2 {
             height: 3.5rem;
             width: 15rem;
@@ -420,6 +421,99 @@ html {
             a {
                 text-decoration: none;
                 color: $bgcolor1;
+            }
+        }
+    }
+
+    .pricing {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: $bgcolor1;
+        scroll-snap-align: start;
+
+        .pricing-content {
+            position: absolute;
+            height: 100%;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            background-color: $bgcolor1;
+
+            p {
+                font-size: 6rem;
+                margin-bottom: 60rem;
+                color: $black;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                line-break: loose;
+            }
+
+            .cards {
+                position: absolute;
+                top: 30%;
+                width: 80vw;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: rgba(255, 245, 255, .1);
+                box-shadow: .5rem .5rem .5rem .5rem rgba(0, 0, 0, .05);
+                padding: 2rem;
+
+                .outter1,
+                .outter2,
+                .outter3 {
+                    display: flex;
+                    flex-direction: column;
+                    width: 15rem;
+                    height: fit-content;
+                }
+
+                h3 {
+                    margin: 2rem 0rem;
+                    color: $learnmore2;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 900;
+                    font-size: 2rem;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+
+                .tran {
+                    color: rgba(0, 0, 0, .35);
+                }
+
+                p {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 1.25rem;
+                    margin-bottom: 0rem;
+                    color: $learnmore2;
+                    padding-bottom: 2rem;
+                    letter-spacing: .15rem;
+                }
+
+                .learnMore2 {
+                    height: 3.5rem;
+                    width: 10rem;
+                    margin: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    border: 0;
+                    border-radius: 0.5rem;
+                    background-color: $learnmore2;
+                    color: $bgcolor1;
+
+                    a {
+                        text-decoration: none;
+                        color: $bgcolor1;
+                    }
+                }
             }
         }
     }
