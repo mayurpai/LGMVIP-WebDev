@@ -165,7 +165,7 @@ html {
         background-image: url("../images/mountain.jpg");
         background-size: cover;
         position: relative;
-        // scroll-snap-align: start;
+        scroll-snap-align: start;
 
         .main-content {
             position: absolute;
@@ -235,7 +235,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        // scroll-snap-align: start;
+        scroll-snap-align: start;
 
         .welcome-content {
             position: absolute;
@@ -356,7 +356,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        // scroll-snap-align: start;
+        scroll-snap-align: start;
         display: flex;
         justify-content: center;
 
