@@ -236,7 +236,6 @@ html {
         width: 100vw;
         background-color: $bgcolor1;
         scroll-snap-align: start;
-        background-size: cover;
 
         .welcome-content {
             position: absolute;
@@ -271,7 +270,7 @@ html {
                     font-size: 3rem;
                     font-weight: 100;
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    color: $black;
+                    color: $learnmore2;
                 }
 
                 #umbrella {
@@ -289,9 +288,12 @@ html {
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
+                background-color: rgba(255, 245, 255, .1);
+                box-shadow: .5rem .5rem .5rem .5rem rgba(0, 0, 0, .05);
+                padding: 2rem;
 
                 #circle {
-                    margin-left: 4rem;
+                    margin-left: 5rem;
                     background: $learnmore2;
                     border-radius: 50%;
                     width: 5rem;
@@ -314,6 +316,7 @@ html {
                     padding: 2rem;
                     color: $learnmore2;
                     text-transform: uppercase;
+                    text-align: center;
                     font-weight: 900;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 }
@@ -324,7 +327,7 @@ html {
                     margin-bottom: 0rem;
                     color: $learnmore2;
                     padding-bottom: 2rem;
-
+                    letter-spacing: .1rem;
                 }
 
                 .learnMore2 {
@@ -344,7 +347,79 @@ html {
                         color: $bgcolor1;
                     }
                 }
+            }
+        }
+    }
 
+    .projects {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: $bgcolor1;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+
+        .project-content {
+            position: absolute;
+            top: 10rem;
+            height: 86%;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            background-color: $learnmore1;
+        }
+
+        p {
+            font-size: 3rem;
+            margin-bottom: 60rem;
+            color: $black;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 4rem;
+        }
+
+        img {
+            height: 60%;
+            width: 100%;
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            margin-left: 2rem;
+            padding: 1rem;
+        }
+
+        h4 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            font-size: 1.25rem;
+            padding: 1rem;
+            margin-left: 2rem;
+            color: $learnmore2;
+        }
+        .learnMore2 {
+            height: 3.5rem;
+            width: 15rem;
+            margin: 1rem;
+            margin-left: 3rem;
+            padding: .5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            background-color: $learnmore2;
+            color: $bgcolor1;
+
+            a {
+                text-decoration: none;
+                color: $bgcolor1;
             }
         }
     }
