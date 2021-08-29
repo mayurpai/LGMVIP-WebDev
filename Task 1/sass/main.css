@@ -9,6 +9,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: default;
 }
 
 html {
@@ -234,8 +235,19 @@ html {
   background-color: #ffe26d;
 }
 
+.main-container .main-page .main-content .learnMore1 a {
+  text-decoration: none;
+  color: #000;
+}
+
 .main-container .main-page .main-content .learnMore2 {
   background-color: #5f4a7b;
+  color: #fefefe;
+}
+
+.main-container .main-page .main-content .learnMore2 a {
+  text-decoration: none;
+  color: #fefefe;
 }
 
 .main-container .welcome {

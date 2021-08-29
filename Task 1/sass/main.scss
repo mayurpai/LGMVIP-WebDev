@@ -12,6 +12,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    cursor: default;
 }
 
 html {
@@ -81,7 +82,7 @@ html {
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
-    scroll-snap-type:y mandatory;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 
     nav {
@@ -206,15 +207,25 @@ html {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 border: 0;
                 border-radius: 0.5rem;
-
             }
 
             .learnMore1 {
                 background-color: $learnmore1;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
             }
 
             .learnMore2 {
                 background-color: $learnmore2;
+                color: $bgcolor1;
+
+                a {
+                    text-decoration: none;
+                    color: $bgcolor1;
+                }
             }
         }
     }
