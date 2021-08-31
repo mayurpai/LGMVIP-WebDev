@@ -448,7 +448,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         .pricing-content {
             position: absolute;
@@ -542,6 +542,78 @@ html {
             }
         }
     }
+
+    .video {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: $learnmore2;
+        scroll-snap-align: start;
+
+        .video-content {
+            position: absolute;
+            height: 100%;
+            width: 100vw;
+            @include flexprob;
+
+            p {
+                font-size: 4.5rem;
+                margin-bottom: 60rem;
+                color: $bgcolor1;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                padding: 2rem;
+            }
+
+            .looper {
+                position: absolute;
+                font-size: 10rem;
+                color: #fff;
+                background-color: #000;
+                margin-top: 5rem;
+                display: flex;
+                -moz-animation: marquee 10s linear infinite;
+                -webkit-animation: marquee 10s linear infinite;
+                animation: marquee 10s linear infinite;
+
+            }
+
+            // @-moz-keyframes marquee {
+            //     0% {
+            //         transform: translateX(100%);
+            //     }
+
+            //     100% {
+            //         transform: translateX(-100%);
+            //     }
+            // }
+
+            // @-webkit-keyframes marquee {
+            //     0% {
+            //         transform: translateX(100%);
+            //     }
+
+            //     100% {
+            //         transform: translateX(-100%);
+            //     }
+            // }
+
+            @keyframes marquee {
+                0% {
+                    // -moz-transform: translateX(100%);
+                    // -webkit-transform: translateX(100%);
+                    transform: translateX(-100%)
+                }
+
+                100% {
+                    // -moz-transform: translateX(0%);
+                    // -webkit-transform: translateX(0%);
+                    transform: translateX(100%);
+                }
+            }
+        }
+    }
+
 
 
     @media screen and (max-width: 768px) {
