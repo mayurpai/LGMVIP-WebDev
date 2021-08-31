@@ -622,7 +622,6 @@ html {
   height: 100vh;
   width: 100vw;
   background-color: #5f4a7b;
-  scroll-snap-align: start;
 }
 
 .main-container .video .video-content {
@@ -694,6 +693,117 @@ html {
     -webkit-transform: translateX(0%);
     transform: translateX(20%);
   }
+}
+
+.main-container .team {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fefefe;
+  scroll-snap-align: start;
+}
+
+.main-container .team .team-content {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fefefe;
+}
+
+.main-container .team .team-content .zippy {
+  font-size: 4.5rem;
+  margin-bottom: 60rem;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+}
+
+.main-container .team .team-content p {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem;
+}
+
+.main-container .team .team-content h3 {
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+  font-weight: 800;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main-container .team .team-content .contains1 {
+  position: absolute;
+  top: 10rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 60vw;
+}
+
+.main-container .team .team-content .contains2 {
+  position: absolute;
+  bottom: 5rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 60vw;
+}
+
+.main-container .team .team-content .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .team .team-content img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
