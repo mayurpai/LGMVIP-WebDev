@@ -91,7 +91,7 @@ html {
   left: 0;
   right: 0;
   top: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   padding: 0 5%;
   height: 10.0rem;
@@ -175,7 +175,6 @@ html {
   background-image: url("../images/mountain.jpg");
   background-size: cover;
   position: relative;
-  scroll-snap-align: start;
 }
 
 .main-container .main-page .main-content {
@@ -202,13 +201,13 @@ html {
   font-size: 4.5rem;
   color: #fefefe;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 1rem;
 }
 
 .main-container .main-page .main-content h2 {
   font-weight: 100;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #fefefe;
   padding: 1rem;
 }
@@ -226,7 +225,7 @@ html {
   margin: 1rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   border: 0;
   border-radius: 0.5rem;
 }
@@ -255,7 +254,6 @@ html {
   height: 100vh;
   width: 100vw;
   background-color: #fefefe;
-  scroll-snap-align: start;
 }
 
 .main-container .welcome .welcome-content {
@@ -279,11 +277,11 @@ html {
 }
 
 .main-container .welcome .welcome-content p {
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin-bottom: 60rem;
   color: #000;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container .welcome .welcome-content .content {
@@ -305,7 +303,7 @@ html {
 .main-container .welcome .welcome-content .content h2 {
   font-size: 3rem;
   font-weight: 100;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #5f4a7b;
 }
 
@@ -371,11 +369,11 @@ html {
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container .welcome .welcome-content .cards p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 0rem;
   color: #5f4a7b;
@@ -389,7 +387,7 @@ html {
   margin: 1rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   border: 0;
   border-radius: 0.5rem;
   background-color: #5f4a7b;
@@ -406,7 +404,6 @@ html {
   height: 100vh;
   width: 100vw;
   background-color: #fefefe;
-  scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,19 +420,37 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #ffe26d;
 }
 
+.main-container .projects .pro1,
+.main-container .projects .pro2,
+.main-container .projects .pro3,
+.main-container .projects .pro4 {
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.main-container .projects .pro1 button:hover,
+.main-container .projects .pro2 button:hover,
+.main-container .projects .pro3 button:hover,
+.main-container .projects .pro4 button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: linear 1s all;
+  transition: linear 1s all;
+}
+
 .main-container .projects p {
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin-bottom: 60rem;
   color: #000;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
 }
 
 .main-container .projects img {
@@ -445,7 +460,7 @@ html {
 }
 
 .main-container .projects h1 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -454,8 +469,8 @@ html {
 }
 
 .main-container .projects h4 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
   font-size: 1.25rem;
   padding: 1rem;
   margin-left: 2rem;
@@ -470,7 +485,7 @@ html {
   padding: .5rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   border: 0;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -513,18 +528,18 @@ html {
 }
 
 .main-container .pricing .pricing-content p {
-  font-size: 6rem;
+  font-size: 4.5rem;
   margin-bottom: 60rem;
   color: #000;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   line-break: loose;
 }
 
 .main-container .pricing .pricing-content .cards {
   position: absolute;
-  top: 30%;
+  top: 25%;
   width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,8 +549,6 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: rgba(255, 245, 255, 0.1);
-  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
-          box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
   padding: 2rem;
 }
 
@@ -549,10 +562,13 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 15rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  width: 25rem;
+  height: 40rem;
 }
 
 .main-container .pricing .pricing-content .cards h3 {
@@ -562,7 +578,7 @@ html {
   text-align: center;
   font-weight: 900;
   font-size: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container .pricing .pricing-content .cards .tran {
@@ -570,25 +586,31 @@ html {
 }
 
 .main-container .pricing .pricing-content .cards p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.25rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
   margin-bottom: 0rem;
   color: #5f4a7b;
   padding-bottom: 2rem;
-  letter-spacing: .15rem;
 }
 
 .main-container .pricing .pricing-content .cards .learnMore2 {
   height: 3.5rem;
-  width: 10rem;
+  width: 16rem;
   margin: 1rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   border: 0;
   border-radius: 0.5rem;
   background-color: #5f4a7b;
   color: #fefefe;
+}
+
+.main-container .pricing .pricing-content .cards .learnMore2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: linear 1s all;
+  transition: linear 1s all;
 }
 
 .main-container .pricing .pricing-content .cards .learnMore2 a {

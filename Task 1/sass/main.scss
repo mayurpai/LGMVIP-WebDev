@@ -91,7 +91,7 @@ html {
         left: 0;
         right: 0;
         top: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
         padding: 0 5%;
         height: 10.0rem;
@@ -165,7 +165,7 @@ html {
         background-image: url("../images/mountain.jpg");
         background-size: cover;
         position: relative;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         .main-content {
             position: absolute;
@@ -182,13 +182,13 @@ html {
                 font-size: 4.5rem;
                 color: $bgcolor1;
                 font-weight: bold;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 padding: 1rem;
             }
 
             h2 {
                 font-weight: 100;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-family: 'Ubuntu', sans-serif;
                 color: $bgcolor1;
                 padding: 1rem;
             }
@@ -204,7 +204,7 @@ html {
                 margin: 1rem;
                 text-transform: uppercase;
                 font-weight: 700;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: 'Ubuntu', sans-serif;
                 border: 0;
                 border-radius: 0.5rem;
             }
@@ -235,7 +235,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         .welcome-content {
             position: absolute;
@@ -249,11 +249,11 @@ html {
             background-color: $bgcolor1;
 
             p {
-                font-size: 3rem;
+                font-size: 4.5rem;
                 margin-bottom: 60rem;
                 color: $black;
                 font-weight: bold;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: 'Montserrat', sans-serif;
             }
 
             .content {
@@ -269,7 +269,7 @@ html {
                 h2 {
                     font-size: 3rem;
                     font-weight: 100;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-family: 'Ubuntu', sans-serif;
                     color: $learnmore2;
                 }
 
@@ -318,11 +318,11 @@ html {
                     text-transform: uppercase;
                     text-align: center;
                     font-weight: 900;
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-family: 'Montserrat', sans-serif;
                 }
 
                 p {
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-family: 'Ubuntu', sans-serif;
                     font-size: 1.25rem;
                     margin-bottom: 0rem;
                     color: $learnmore2;
@@ -336,7 +336,7 @@ html {
                     margin: 1rem;
                     text-transform: uppercase;
                     font-weight: 700;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-family: 'Ubuntu', sans-serif;
                     border: 0;
                     border-radius: 0.5rem;
                     background-color: $learnmore2;
@@ -356,7 +356,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
         display: flex;
         justify-content: center;
 
@@ -366,17 +366,35 @@ html {
             height: 86%;
             width: 100vw;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             background-color: $learnmore1;
         }
 
+        .pro1,
+        .pro2,
+        .pro3,
+        .pro4 {
+            box-shadow: .5rem .5rem .5rem .5rem rgba(0, 0, 0, .1);
+            // padding: 4rem;
+        }
+
+        .pro1 button,
+        .pro2 button,
+        .pro3 button,
+        .pro4 button {
+            &:hover {
+                transform: scale(1.1);
+                transition: linear 1s all;
+            }
+        }
+
         p {
-            font-size: 3rem;
+            font-size: 4.5rem;
             margin-bottom: 60rem;
             color: $black;
             font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            padding: 4rem;
+            font-family: 'Montserrat', sans-serif;
+            padding: 2rem;
         }
 
         img {
@@ -386,7 +404,7 @@ html {
         }
 
         h1 {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-weight: 900;
             text-transform: uppercase;
             font-size: 1.5rem;
@@ -395,8 +413,8 @@ html {
         }
 
         h4 {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 100;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 800;
             font-size: 1.25rem;
             padding: 1rem;
             margin-left: 2rem;
@@ -411,7 +429,7 @@ html {
             padding: .5rem;
             text-transform: uppercase;
             font-weight: 700;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Ubuntu', sans-serif;
             border: 0;
             border-radius: 0.5rem;
             font-size: 1rem;
@@ -445,24 +463,24 @@ html {
             background-color: $bgcolor1;
 
             p {
-                font-size: 6rem;
+                font-size: 4.5rem;
                 margin-bottom: 60rem;
                 color: $black;
                 font-weight: bold;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 text-align: center;
                 line-break: loose;
             }
 
             .cards {
                 position: absolute;
-                top: 30%;
+                top: 25%;
                 width: 80vw;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
                 background-color: rgba(255, 245, 255, .1);
-                box-shadow: .5rem .5rem .5rem .5rem rgba(0, 0, 0, .05);
+                // box-shadow: .5rem .5rem .5rem .5rem rgba(0, 0, 0, .4);
                 padding: 2rem;
 
                 .outter1,
@@ -470,8 +488,10 @@ html {
                 .outter3 {
                     display: flex;
                     flex-direction: column;
-                    width: 15rem;
-                    height: fit-content;
+                    justify-content: center;
+                    box-shadow: .5rem .5rem .5rem .5rem rgba(0, 0, 0, .4);
+                    width: 25rem;
+                    height: 40rem;
                 }
 
                 h3 {
@@ -481,7 +501,7 @@ html {
                     text-align: center;
                     font-weight: 900;
                     font-size: 2rem;
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-family: 'Montserrat', sans-serif;
                 }
 
                 .tran {
@@ -489,25 +509,30 @@ html {
                 }
 
                 p {
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    font-size: 1.25rem;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 1.5rem;
                     margin-bottom: 0rem;
                     color: $learnmore2;
                     padding-bottom: 2rem;
-                    letter-spacing: .15rem;
+                    // letter-spacing: .15rem;
                 }
 
                 .learnMore2 {
                     height: 3.5rem;
-                    width: 10rem;
+                    width: 16rem;
                     margin: 1rem;
                     text-transform: uppercase;
                     font-weight: 700;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-family: 'Ubuntu', sans-serif;
                     border: 0;
                     border-radius: 0.5rem;
                     background-color: $learnmore2;
                     color: $bgcolor1;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: linear 1s all;
+                    }
 
                     a {
                         text-decoration: none;
