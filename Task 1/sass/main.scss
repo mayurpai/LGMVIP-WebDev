@@ -631,7 +631,7 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: $bgcolor1;
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         .team-content {
             position: absolute;
@@ -703,10 +703,91 @@ html {
             img {
                 height: 20rem;
                 width: 20rem;
-                border-radius: 50%;
+                clip-path: circle();
             }
         }
     }
+
+    .life {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: $bgcolor1;
+        // scroll-snap-align: start;
+
+        .life-content {
+            position: absolute;
+            height: 100%;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+            flex-wrap: wrap;
+            background-color: $bgcolor1;
+
+            p {
+                font-size: 4.5rem;
+                margin-bottom: 60rem;
+                color: $black;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+
+    .newsblog {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: $bgcolor1;
+        scroll-snap-align: start;
+
+        .news {
+            position: absolute;
+            height: 35%;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+            place-items: center;
+            flex-wrap: wrap;
+            background-color: $learnmore2;
+
+            p {
+                font-size: 5.5rem;
+                color: $black;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .email {
+                
+            }
+        }
+
+        .blog {
+            position: absolute;
+            height: 65%;
+            top: 35%;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+            place-items: center;
+            flex-wrap: wrap;
+            background-color: $learnmore1;
+
+            p {
+                font-size: 5.5rem;
+                color: $black;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+
+
 
 
 

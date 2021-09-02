@@ -700,7 +700,6 @@ html {
   height: 100vh;
   width: 100vw;
   background-color: #fefefe;
-  scroll-snap-align: start;
 }
 
 .main-container .team .team-content {
@@ -803,7 +802,102 @@ html {
 .main-container .team .team-content img {
   height: 20rem;
   width: 20rem;
-  border-radius: 50%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.main-container .life {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fefefe;
+}
+
+.main-container .life .life-content {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fefefe;
+}
+
+.main-container .life .life-content p {
+  font-size: 4.5rem;
+  margin-bottom: 60rem;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-container .newsblog {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fefefe;
+  scroll-snap-align: start;
+}
+
+.main-container .newsblog .news {
+  position: absolute;
+  height: 35%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+  place-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #5f4a7b;
+}
+
+.main-container .newsblog .news p {
+  font-size: 5.5rem;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-container .newsblog .blog {
+  position: absolute;
+  height: 65%;
+  top: 35%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+  place-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ffe26d;
+}
+
+.main-container .newsblog .blog p {
+  font-size: 5.5rem;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
