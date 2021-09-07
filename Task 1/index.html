@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -21,12 +24,12 @@
                 <input id="navToggle" type="checkbox">
                 <div class="logo"><strong>Zippy</strong></div>
                 <ul class="links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/Task 1/">Home</a></li>
+                    <li><a href="/Task 1/#projects">Projects</a></li>
+                    <li><a href="/Task 1/#pricing">Pricing</a></li>
+                    <li><a href="/Task 1/#team">Team</a></li>
+                    <li><a href="/Task 1/#newsblog">Blog</a></li>
+                    <li><a href="/Task 1/#contact">Contact</a></li>
                 </ul>
                 <label for="navToggle" class="icon">
                     <div class="line"></div>
@@ -77,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
+        <div id="projects">
             <p>Projects</p>
             <div class="project-content">
                 <div class="pro1">
@@ -110,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="pricing">
+        <div id="pricing">
             <div class="pricing-content">
                 <p>Pricing Table</p>
                 <div class="cards">
@@ -158,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <div class="team">
+        <div id="team">
             <div class="team-content">
                 <p class="zippy">Zippy Team</p>
                 <div class="contains1">
@@ -200,22 +203,113 @@
         <div class="life">
             <div class="life-content">
                 <p>Life in Zippy</p>
-                <div class="image">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(images/c1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/c2.jfif)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/c3.jfif)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/c4.jfif)"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
 
-                    <div class="scroller">
 
+                <script src="swiper.min.js"></script>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        effect: 'coverflow',
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: 'auto',
+                        coverflowEffect: {
+                            rotate: 60,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 5,
+                            slideShadows: true,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+        <div id="newsblog">
+            <div class="news">
+                <p>Newsletter Signup</p>
+                <input type="email" name=email id=email placeholder="abcd@example.com" /><a href="#"><button
+                        class="learnMore1">Sign Up</button></a>
+                <a href="#"><button class="learnMore2">Sign Up</button></a>
+            </div>
+            <div class="blog">
+                <p>Blog</p>
+                <div class="cards">
+                    <div class="outter1">
+                        <img src="images/c1.jpg" />
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <h1>15 Jan, 2015</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cum debitis rem.</p>
+                        <a href="#"><button class="learnMore2">Read More</button></a>
+                    </div>
+                    <div class="outter2">
+                        <img src="images/c2.jfif" />
+                        <h3>Lorem, ipsum dolor sit amet</h3>
+                        <h1>15 Jan, 2015</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cum debitis rem.</p>
+                        <a href="#"><button class="learnMore2">Read More</button></a>
+                    </div>
+                    <div class="outter3">
+                        <img src="images/c3.jfif" />
+                        <h3>Lorem, ipsum dolor sit amet</h3>
+                        <h1>15 Jan, 2015</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cum debitis rem.</p>
+                        <a href="#"><button class="learnMore2">Read More</button></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="newsblog">
-            <div class="news">
-                <p>Newsletter Signup</p>
-                <input type="email" name=email id=email/><a href="#"><button class="learnMore1">Learn More</button></a>
-                <a href="#"><button class="learnMore2">Learn More</button></a>
+        <div id="contact">
+            <div class="map">
+                <!-- <img src="images/website.jpg" alt="" srcset=""> -->
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27406229783!2d-118.69192088081832!3d34.020161305612014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1630759559359!5m2!1sen!2sin"
+                    width="1000" height="600" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
             </div>
-            <div class="blog">
-                <p>Blog</p>
+            <div class="form">
+                <p>Contact</p>
+                <input type="text" placeholder="Name" name="name" autocomplete="hidden" />
+                <input type="email" placeholder="Email Address" name="email" autocomplete="hidden" />
+                <input type="text" placeholder="Subject" name="subject" autocomplete="hidden" />
+                <textarea name="message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+                <a href="#"><button class="learnMore2">Send</button></a>
+            </div>
+            <div class="foot">
+                <div class="cards">
+                    <div class="outter1">
+                        <h3>Office Address</h3>
+                        <p>Lorem ipsum dolor, 234 <br> 1200 consectetur <br> Adpatching </p>
+                    </div>
+                    <div class="outter2">
+                        <h3>Follow Us</h3>
+                        <div class="contains1">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                        <div class="contains2">
+                            <i class="fa fa-behance" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="outter3">
+                        <h3>Contact Us</h3>
+                        <p>+ 123 456 789 <br> zippy@skype <br> enquiry@zippy.com </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
