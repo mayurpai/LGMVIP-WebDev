@@ -838,13 +838,13 @@ html {
   place-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #5f4a7b;
+  background-color: #171717;
 }
 
 .main-container .life .life-content p {
   font-size: 5.5rem;
   margin-bottom: 60rem;
-  color: #000;
+  color: #fefefe;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }

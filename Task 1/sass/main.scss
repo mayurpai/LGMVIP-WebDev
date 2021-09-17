@@ -725,12 +725,12 @@ html {
             justify-content: center;
             place-items: center;
             flex-wrap: wrap;
-            background-color: $learnmore2;
+            background-color: #171717;
 
             p {
                 font-size: 5.5rem;
                 margin-bottom: 60rem;
-                color: $black;
+                color: $bgcolor1;
                 font-weight: bold;
                 font-family: 'Montserrat', sans-serif;
             }
@@ -752,8 +752,6 @@ html {
                 width: 35rem;
                 height: 35rem;
             }
-
-            
         }
     }
 
